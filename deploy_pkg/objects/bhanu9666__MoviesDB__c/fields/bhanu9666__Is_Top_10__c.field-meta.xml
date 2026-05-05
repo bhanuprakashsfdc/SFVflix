@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>bhanu9666__Is_Top_10__c</fullName>
-    <label>Is Top 10</label>
-    <type>Checkbox</type>
-    <defaultValue>false</defaultValue>
-    <required>false</required>
-</CustomField>
