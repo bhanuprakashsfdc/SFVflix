@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Top_10__c</fullName>
+    <label>Is Top 10</label>
+    <type>Checkbox</type>
+    <description>Indicates if movie is in top 10</description>
+    <required>false</required>
+    <defaultValue>false</defaultValue>
+</CustomField>

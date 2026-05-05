@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>YouTube_Thumbnail_1280__c</fullName>
+    <label>YouTube Thumbnail 1280</label>
+    <type>TextArea</type>
+    <length>131072</length>
+    <visibleLines>5</visibleLines>
+    <description>High-res thumbnail URL (1280x720)</description>
+    <required>false</required>
+</CustomField>
