@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Layout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <name>MovieDb Layout</name>
+    <label>Movie Database Layout</label>
+    <style>Classic</style>
+
+    <layoutSections>
+        <detail>true</detail>
+        <heading>true</heading>
+        <layoutColumns>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>Title__c</field>
+                <itemKind>Field</itemKind>
+            </layoutItems>
+        </layoutColumns>
+    </layoutSections>
+
+    <layoutSections>
+        <detail>true</detail>
+        <heading>false</heading>
+        <layoutColumns>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>Type__c</field>
+                <itemKind>Field</itemKind>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>Movie_Language__c</field>
+                <itemKind>Field</itemKind>
+            </layoutItems>
+            <layoutItems>
+                <field>Input_Language__c</field>
+                <itemKind>Field</itemKind>
+            </layoutItems>
+            <layoutItems>
+                <field>Year__c</field>
+                <itemKind>Field</itemKind>
+            </layoutItems>
+        </layoutColumns>
+    </layoutSections>
+
+    <layoutSections>
+        <detail>true</detail>
+        <heading>false</heading>
+        <layoutColumns>
+            <layoutItems>
+                <field>Description__c</field>
+                <itemKind>Field</itemKind>
+                <width>100%</width>
+            </layoutItems>
+        </layoutColumns>
+    </layoutSections>
+
+    <layoutSections>
+        <detail>true</detail>
+        <heading>true</heading>
+        <label>Video Information</label>
+        <layoutColumns>
+            <layoutItems>
+                <field>YouTube_URL__c</field>
+                <itemKind>Field</itemKind>
+            </layoutItems>
+            <layoutItems>
+                <field>Video_ID__c</field>
+                <itemKind>Field</itemKind>
+            </layoutItems>
+            <layoutItems>
+                <field>YouTube_Embed_URL__c</field>
+                <itemKind>Field</itemKind>
+            </layoutItems>
+            <layoutItems>
+                <field>YouTube_Thumbnail_1280__c</field>
+                <itemKind>Field</itemKind>
+            </layoutItems>
+        </layoutColumns>
+        <layoutColumns>
+            <layoutItems>
+                <field>Thumbnail_URL__c</field>
+                <itemKind>Field</itemKind>
+            </layoutItems>
+            <layoutItems>
+                <field>Banner_Image_URL__c</field>
+                <itemKind>Field</itemKind>
+            </layoutItems>
+        </layoutColumns>
+    </layoutSections>
+
+    <layoutSections>
+        <detail>true</detail>
+        <heading>true</heading>
+        <label>Classification</label>
+        <layoutColumns>
+            <layoutItems>
+                <field>Rating__c</field>
+                <itemKind>Field</itemKind>
+            </layoutItems>
+            <layoutItems>
+                <field>Duration__c</field>
+                <field>Duration_Minutes__c</field>
+                <itemKind>Field</itemKind>
+            </layoutItems>
+            <layoutItems>
+                <field>Match_Score__c</field>
+                <field>Match_Score_Value__c</field>
+                <itemKind>Field</itemKind>
+            </layoutItems>
+            <layoutItems>
+                <field>Is_Top_10__c</field>
+                <field>Is_Featured__c</field>
+                <itemKind>Field</itemKind>
+            </layoutItems>
+        </layoutColumns>
+    </layoutSections>
+
+    <layoutSections>
+        <detail>true</detail>
+        <heading>true</heading>
+        <label>Content Details</label>
+        <layoutColumns>
+            <layoutItems>
+                <field>Category__c</field>
+                <itemKind>Field</itemKind>
+            </layoutItems>
+            <layoutItems>
+                <field>Genres__c</field>
+                <itemKind>Field</itemKind>
+            </layoutItems>
+            <layoutItems>
+                <field>Genre_List__c</field>
+                <itemKind>Field</itemKind>
+            </layoutItems>
+            <layoutItems>
+                <field>Cast__c</field>
+                <itemKind>Field</itemKind>
+            </layoutItems>
+            <layoutItems>
+                <field>Cast_Count__c</field>
+                <itemKind>Field</itemKind>
+            </layoutItems>
+        </layoutColumns>
+    </layoutSections>
+
+    <layoutSections>
+        <detail>true</detail>
+        <heading>false</heading>
+        <layoutColumns>
+            <layoutItems>
+                <field>External_ID__c</field>
+                <itemKind>Field</itemKind>
+            </layoutItems>
+            <layoutItems>
+                <field>Full_URL__c</field>
+                <itemKind>Field</itemKind>
+            </layoutItems>
+            <layoutItems>
+                <field>Trim_URL__c</field>
+                <itemKind>Field</itemKind>
+            </layoutItems>
+        </layoutColumns>
+    </layoutSections>
+
+    <relatedLists>
+        <relatedList>
+            <fields>
+                <field>Title__c</field>
+                <field>Movie_Language__c</field>
+                <field>Year__c</field>
+                <field>Is_Featured__c</field>
+            </fields>
+            <sortBy>Title__c</sortBy>
+            <sortOrder>Asc</sortOrder>
+        </relatedList>
+    </relatedLists>
+
+    <customButtons>
+        <customButton>
+            <label>View on YouTube</label>
+            <onClick JavaScript="window.open('{!YouTube_URL__c}', '_blank');" type="Button"/>
+            <url>/servlet/servlet.Integration?ic=1</url>
+        </customButton>
+    </customButtons>
+
+    <showHighlightsPanel>true</showHighlightsPanel>
+    <showRunAssignmentRules>true</showRunAssignmentRules>
+</Layout>

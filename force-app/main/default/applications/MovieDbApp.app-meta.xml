@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Application xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>MovieDb App</label>
+    <description>Movie Database Management Application</description>
+    <detailPage>true</detailPage>
+    <editPage>true</editPage>
+    <homePage>true</homePage>
+    <listView>true</listView>
+    <logo>/resource/MovieDb_Logo</logo>
+    <navType>Custom</navType>
+    <tabs>
+        <tab>MovieDb__c</tab>
+    </tabs>
+    <userProfile>System Administrator</userProfile>
+</Application>
