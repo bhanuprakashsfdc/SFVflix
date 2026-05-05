@@ -2,14 +2,20 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
         <members>MovieDbService</members>
-        <members>MovieDbServiceTest</members>
         <members>MovieDbTriggerHandler</members>
-        <members>MovieDbTriggerHandlerTest</members>
         <name>ApexClass</name>
     </types>
     <types>
         <members>MovieDbTrigger</members>
         <name>ApexTrigger</name>
+    </types>
+    <types>
+        <members>bhanu9666__MoviesDB__c-bhanu9666__MoviesDB Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>bhanu9666__MoviesDB__c</members>
+        <name>CustomTab</name>
     </types>
     <version>66.0</version>
 </Package>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Is_Featured__c</fullName>
-    <label>Is Featured</label>
-    <type>Checkbox</type>
-    <description>Featured movie based on score and top 10 status</description>
-    <required>false</required>
-    <defaultValue>false</defaultValue>
-</CustomField>
