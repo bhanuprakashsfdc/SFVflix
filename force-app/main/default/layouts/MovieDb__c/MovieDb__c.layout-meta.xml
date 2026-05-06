@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
-    <name>MovieDb Layout</name>
-    <label>Movie Database Layout</label>
-    <style>Classic</style>
-
     <layoutSections>
         <detail>true</detail>
         <heading>true</heading>

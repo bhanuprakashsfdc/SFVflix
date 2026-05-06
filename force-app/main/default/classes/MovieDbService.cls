@@ -1,29 +1,29 @@
 public class MovieDbService {
-    public void processRecords(List<bhanu9666__MoviesDB__c> records) {
-        for (bhanu9666__MoviesDB__c record : records) {
-            if (record.bhanu9666__Match_Score__c != null) {
-                record.bhanu9666__Match_Score_Value__c = parseScore(record.bhanu9666__Match_Score__c);
+    public void processRecords(List<MovieDb__c> records) {
+        for (MovieDb__c record : records) {
+            if (record.Match_Score__c != null) {
+                record.Match_Score_Value__c = parseScore(record.Match_Score__c);
             }
-            if (record.bhanu9666__Duration__c != null) {
-                record.bhanu9666__Duration_Minutes__c = parseDuration(record.bhanu9666__Duration__c);
+            if (record.Duration__c != null) {
+                record.Duration_Minutes__c = parseDuration(record.Duration__c);
             }
-            if (record.bhanu9666__Rating__c != null) {
-                record.bhanu9666__Normalized_Rating__c = normalizeRating(record.bhanu9666__Rating__c);
+            if (record.Rating__c != null) {
+                record.Normalized_Rating__c = normalizeRating(record.Rating__c);
             }
-            if (record.bhanu9666__Genres__c != null) {
-                record.bhanu9666__Genre_List__c = record.bhanu9666__Genres__c.replace(';', '|');
+            if (record.Genres__c != null) {
+                record.Genre_List__c = record.Genres__c.replace(';', '|');
             }
-            if (record.bhanu9666__Cast__c != null) {
-                String[] parts = record.bhanu9666__Cast__c.split(',');
-                record.bhanu9666__Cast_Count__c = parts.size();
+            if (record.Cast__c != null) {
+                String[] parts = record.Cast__c.split(',');
+                record.Cast_Count__c = parts.size();
             }
-            if (record.bhanu9666__Video_ID__c != null) {
-                record.bhanu9666__YouTube_Thumbnail_1280__c = 'https://img.youtube.com/vi/' + record.bhanu9666__Video_ID__c + '/maxresdefault.jpg';
-                record.bhanu9666__YouTube_Embed_URL__c = 'https://www.youtube.com/embed/' + record.bhanu9666__Video_ID__c;
+            if (record.Video_ID__c != null) {
+                record.YouTube_Thumbnail_1280__c = 'https://img.youtube.com/vi/' + record.Video_ID__c + '/maxresdefault.jpg';
+                record.YouTube_Embed_URL__c = 'https://www.youtube.com/embed/' + record.Video_ID__c;
             }
-            Boolean isTop10 = record.bhanu9666__Is_Top_10__c != null && record.bhanu9666__Is_Top_10__c;
-            Decimal score = record.bhanu9666__Match_Score_Value__c;
-            record.bhanu9666__Is_Featured__c = isTop10 || (score != null && score >= 7.0);
+            Boolean isTop10 = record.Is_Top_10__c != null && record.Is_Top_10__c;
+            Decimal score = record.Match_Score_Value__c;
+            record.Is_Featured__c = isTop10 || (score != null && score >= 7.0);
         }
     }
     private Decimal parseScore(String s) {
@@ -45,5 +45,5 @@ public class MovieDbService {
         if (u.contains('U')) return 'U';
         return 'Not_Rated';
     }
-    public void enrichFromExternalSource(List<bhanu9666__MoviesDB__c> records, Set<String> ids) {}
+    public void enrichFromExternalSource(List<MovieDb__c> records, Set<String> ids) {}
 }
