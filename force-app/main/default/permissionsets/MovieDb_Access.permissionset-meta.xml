@@ -111,12 +111,40 @@
     </fieldPermissions>
     <fieldPermissions>
         <field>MovieDb__c.Normalized_Rating__c</field>
+        <editable>false</editable>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <field>MovieDb__c.Match_Score_Value__c</field>
+        <editable>false</editable>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <field>MovieDb__c.Duration_Minutes__c</field>
+        <editable>false</editable>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <field>MovieDb__c.Is_Featured__c</field>
+        <editable>false</editable>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <field>MovieDb__c.Genre_List__c</field>
+        <editable>false</editable>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <field>MovieDb__c.Cast_Count__c</field>
+        <editable>false</editable>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <field>MovieDb__c.YouTube_Thumbnail_1280__c</field>
+        <editable>false</editable>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <field>MovieDb__c.YouTube_Embed_URL__c</field>
         <editable>false</editable>
         <readable>true</readable>
@@ -129,12 +157,12 @@
         <apexClass>MovieDbService</apexClass>
         <enabled>true</enabled>
     </classAccesses>
-    <tabVisibilities>
-        <tab>MovieDb__c</tab>
-        <visibility>Visible</visibility>
-    </tabVisibilities>
     <applicationVisibilities>
         <application>MovieDbApp</application>
         <visible>true</visible>
     </applicationVisibilities>
+    <tabVisibilities>
+        <tab>MovieDb__c</tab>
+        <visibility>Visible</visibility>
+    </tabVisibilities>
 </PermissionSet>

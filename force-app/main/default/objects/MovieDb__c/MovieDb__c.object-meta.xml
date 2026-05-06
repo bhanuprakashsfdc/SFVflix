@@ -2,11 +2,8 @@
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
     <label>Movie Database</label>
     <pluralLabel>Movie Database Entries</pluralLabel>
-    <name>MovieDb__c</name>
     <deploymentStatus>Deployed</deploymentStatus>
     <sharingModel>ReadWrite</sharingModel>
-    <labelField>Title__c</labelField>
-    <enableFields>true</enableFields>
     <allowInChatterGroups>true</allowInChatterGroups>
     <searchLayouts>
         <searchResults>

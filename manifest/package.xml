@@ -1,64 +1,15 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>*</members>
+        <members>MovieDbService</members>
+        <members>MovieDbServiceTest</members>
+        <members>MovieDbTriggerHandler</members>
+        <members>MovieDbTriggerHandlerTest</members>
         <name>ApexClass</name>
     </types>
     <types>
-        <members>*</members>
-        <name>ApexComponent</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>ApexPage</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>ApexTestSuite</name>
-    </types>
-    <types>
-        <members>*</members>
+        <members>MovieDbTrigger</members>
         <name>ApexTrigger</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>AuraDefinitionBundle</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>LightningComponentBundle</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>StaticResource</name>
-    </types>
-    <types>
-        <members>MovieDb__c</members>
-        <name>CustomObject</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>CustomField</name>
-    </types>
-    <types>
-        <members>MovieDb_Access</members>
-        <name>PermissionSet</name>
-    </types>
-    <types>
-        <members>MovieDb__c</members>
-        <name>Tab</name>
-    </types>
-    <types>
-        <members>MovieDb__c-MovieDb Layout</members>
-        <name>Layout</name>
-    </types>
-    <types>
-        <members>MovieDbApp</members>
-        <name>Application</name>
-    </types>
-    <types>
-        <members>Movie</members>
-        <name>RecordType</name>
     </types>
     <version>66.0</version>
 </Package>
